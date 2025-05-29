@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -18,7 +19,7 @@ const Navbar = () => {
                         id="navbarSupportedContent">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="index.html">Home</a>
+                                <a className="nav-link" aria-current="page" href="index.html"><Link to="/">Home</Link></a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link disabled" href="about-us.html">Quiénes somos</a>

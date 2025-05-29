@@ -1,7 +1,3 @@
-.modal-content {color: #093246;border-radius: 28px;}
-
-.border-secondary {border: 3px solid #68BDB8 !important;}
-
 .modal-content .btn.w-100 {
   color: #F3EDE1; /* Cambia el color a la paleta */
 }
@@ -39,9 +35,7 @@
   justify-content: center;
 }
 
-.btn-extra {
-  display: none;
-}
+
 /* de aqui para abajo agregar las clases  generales, sin pasarse los  */
 
 
@@ -135,15 +129,7 @@
     display: block; /* Hace visible el botón */
     font-weight: 700;
   }
-  .btn-success{
-    width: 100%;
-    border-radius: 16px;
-    background-color: #F3EDE1;
-    border-width: 3px;
-    border-color: #198683;
-    color: #198683;
-    height: 80px;
-  }
+
   .btn-secondary{
     width: 100%;
     height: 80px;
