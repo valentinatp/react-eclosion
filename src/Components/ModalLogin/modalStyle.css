@@ -1,0 +1,156 @@
+.modal-content {color: #093246;border-radius: 28px;}
+
+.border-secondary {border: 3px solid #68BDB8 !important;}
+
+.modal-content .btn.w-100 {
+  color: #F3EDE1; /* Cambia el color a la paleta */
+}
+
+.modal-content .btn:hover,
+.modal-content .btn:focus {
+  background-color: #146c6a;
+  color: #fff;
+}
+
+.modal-content .register-link a,
+.modal-content a.fw-bold {
+  color: #198683;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+#loginModal .modal-dialog {
+  margin: 0;
+  width: 100vw;
+  min-height: 1000px; /* Cambiado de 100vh a 1000px */
+  max-width: 1000px; /* Cambiado de 100vw a 1000px */
+  display: flex;
+  align-items: stretch;
+}
+
+#loginModal .modal-content {
+  border-radius: 50px 50px 0px 0px;
+  min-height: 1000px; /* Cambiado de 100vh a 1000px */
+  width: 100vw;
+  max-width: 1000px; /* Cambiado de 100vw a 1000px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-extra {
+  display: none;
+}
+/* de aqui para abajo agregar las clases  generales, sin pasarse los  */
+
+
+
+
+
+
+
+/* de aqui para abajo solo agregar clases en los @media */
+@media (min-width: 576px) {  
+      #loginModal .modal-dialog {
+    margin: 0;
+    width: 100vw;
+    min-height: 1000px; /* Cambiado de 100vh a 1000px */
+    max-width: 1000px; /* Cambiado de 10000vw a 1000px */
+    display: flex;
+    align-items: stretch;
+  }
+  #loginModal .modal-content {
+    border-radius: 50px 50px 0px 0px;
+    min-height: 1000px; /* Cambiado de 100vh a 1000px */
+    width: 100vw;
+    max-width: 1000px; /* Cambiado de 100vw a 1000px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+.png-icon {
+    width: 50px; /* Ajusta el ancho según sea necesario */
+    height: 50px; /* Ajusta la altura según sea necesario */
+    background-image: url("pictures/eye.png"); /* Ruta de tu archivo PNG */
+    background-size: contain; /* Ajusta el tamaño de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992.99px) {
+  #loginModal .modal-dialog {
+    margin: 0;
+    width: 100vw;
+    min-height: 1000px; /* Cambiado de 100vh a 1000px */
+    max-width: 1000px; /* Cambiado de 100vw a 1000px */
+    display: flex;
+    align-items: stretch;
+  }
+  #loginModal .modal-content {
+    border-radius: 40px 40px 0px 0px;
+    min-height: 1000px; /* Cambiado de 100vh a 1000px */
+    width: 100vw;
+    max-width: 1000px; /* Cambiado de 100vw a 1000px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .btn {
+  max-width: none;
+  border-radius: 16px;
+  font-weight: 700;
+}
+
+
+
+}
+
+
+/* Desde 993px en adelante: vuelve al centrado y tamaño normal */
+@media (min-width: 993px) {
+
+  .modal-content .register-link a:hover, .modal-content a.fw-bold:hover {text-decoration: underline;}
+  #loginModal .modal-dialog {
+    margin: 1.75rem auto;
+    width: auto;
+    min-height: auto;
+    max-width: 500px; /* Cambiado de auto a 500px */
+    display: flex;
+    align-items: center;
+  }
+  #loginModal .modal-content {
+     border-radius: 40px;
+    min-height: auto;
+    width: 100%;
+    max-width: 500px; /* Cambiado de auto a 500px */
+    margin: 0 auto;
+  }
+  .btn-extra {
+    display: block; /* Hace visible el botón */
+    font-weight: 700;
+  }
+  .btn-success{
+    width: 100%;
+    border-radius: 16px;
+    background-color: #F3EDE1;
+    border-width: 3px;
+    border-color: #198683;
+    color: #198683;
+    height: 80px;
+  }
+  .btn-secondary{
+    width: 100%;
+    height: 80px;
+    border-radius: 16px;
+  }
+  .form-control{
+    height: 80px;
+  }
+
+}

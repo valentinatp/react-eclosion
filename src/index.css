@@ -2,6 +2,9 @@
 @import url(./Components/Feed/feed-style.css);
 @import url(./Components/Footer/footer-style.css);
 @import url(./Components/Forms/forms-style.css);
-@import url(./Components/Modal/modal-style.css);
-@import url(./Components/Navbar/navbar-style.css);
 @import url(./Components/Home/SearchCategory/search-category.css);
+@import url(./Components/ModalLogin/modalStyle.css);
+@import url(./Components/Navbar/navbar-style.css);
+
+
+

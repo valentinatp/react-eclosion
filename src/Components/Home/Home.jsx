@@ -4,6 +4,22 @@ const Home = () => {
     return (
         <>
             <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+            <h1>Hola mundo home</h1>
+
             <SearchCategory />
         </>
     )
