@@ -45,7 +45,7 @@
 
 
 /* de aqui para abajo solo agregar clases en los @media */
-@media (min-width: 576px) {  
+@media (min-width: 100px) and (max-width: 767.99px) {  
       #loginModal .modal-dialog {
     margin: 0;
     width: 100vw;
@@ -80,7 +80,7 @@
 @media (min-width: 768px) and (max-width: 992.99px) {
   #loginModal .modal-dialog {
     margin: 0;
-    width: 100vw;
+    width: 1000px; /* Cambiado de 100vh a 1000px */
     min-height: 1000px; /* Cambiado de 100vh a 1000px */
     max-width: 1000px; /* Cambiado de 100vw a 1000px */
     display: flex;
@@ -89,7 +89,7 @@
   #loginModal .modal-content {
     border-radius: 40px 40px 0px 0px;
     min-height: 1000px; /* Cambiado de 100vh a 1000px */
-    width: 100vw;
+    width: 1000px; /* Cambiado de 100vw a 1000px */
     max-width: 1000px; /* Cambiado de 100vw a 1000px */
     display: flex;
     flex-direction: column;
