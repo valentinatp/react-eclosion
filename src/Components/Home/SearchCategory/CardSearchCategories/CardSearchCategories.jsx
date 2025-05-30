@@ -1,4 +1,5 @@
 import dataNews from '../../../../data/data'
+import { Link } from 'react-router-dom';
 
 const CardSearchCategories = () => {
     return (
@@ -14,7 +15,7 @@ const CardSearchCategories = () => {
                                         <h5 className="card-title">{news.title}</h5>
                                         <p className="card-text"> { news.paragraph } </p>
                                     </div>
-                                    <button className="btn btn-primary">Link noticia </button>
+                                    <button className="btn btn-primary"><Link to="/src/Components/Feed/Feed.jsx" /> </button>
                                 </div>
                             ))
                         }
