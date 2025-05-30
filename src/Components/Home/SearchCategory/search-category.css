@@ -2,7 +2,7 @@
 
 .container-cards-categories { display: flex; overflow: hidden; overflow-x: scroll; }
 .cards-categories.card { padding: 1rem; margin-right: 0.5rem; }
-.cards-categories.card .card-image { width: auto; border-radius: 0.5rem; height: 200px;  margin-bottom: 1rem; }
+.cards-categories.card .card-image { width: auto; border-radius: 0.5rem; height: 200px; aspect-ratio: 1/1; margin-bottom: 1rem; }
 .cards-categories.card .card-body { padding: 0; }
 .cards-categories.card .card-body .card-title { word-break: break-all; font-size: 20px; }
 .cards-categories.card .card-body .card-text { font-size: 18px; height: auto; max-height: 170px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

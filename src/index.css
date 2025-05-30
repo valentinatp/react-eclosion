@@ -3,8 +3,9 @@
 @import url(./Components/Footer/footer-style.css);
 @import url(./Components/Forms/forms-style.css);
 @import url(./Components/Home/SearchCategory/search-category.css);
+@import url(./Components/Home/CardsNews/cardsnews-style.css);
 @import url(./Components/Forms/ModalLogin/modalStyle.css);
-@import url(./Components/Forms/Resgister/registreStyle.css);
+@import url(./Components/Forms/Register/register-style.css);
 @import url(./Components/Navbar/navbar-style.css);
 @import url(./Components/Home/SearchCategory/search-category.css);
 
@@ -30,6 +31,7 @@ footer { background-color: #093246; padding: 1rem 0; color: #F3EDE1; font-size: 
 .btn.btn-primary { background-color: #093246; border-color: #093246; color: #F3EDE1; }
 .btn.btn-secondary { background-color: #198683; border-color: #198683; color: #F3EDE1; }
 
+<<<<<<< HEAD
 #root {
   width: 100%;
   min-height: 100vh;
@@ -65,3 +67,6 @@ footer { background-color: #093246; padding: 1rem 0; color: #F3EDE1; font-size: 
 /*Resolucion desktop*/
 /*XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {  }
+=======
+
+>>>>>>> e858e2322991d83837175299a5158049b1c63452

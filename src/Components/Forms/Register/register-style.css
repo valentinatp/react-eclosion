@@ -1,0 +1,56 @@
+/* de aqui para abajo agregar las clases  generales, sin pasarse los  .de aqui empieza los css de registro */
+
+.boton-regresar {display: inline-block;font-size: 32px;text-decoration: none;margin-top: 26px;margin-left: 16px;}
+.boton-regresar img {width: 32px;height: 32px;vertical-align: middle;}
+
+.registro-titulo {margin-bottom: 10px;margin-top: -24px;}
+.registro-container {margin-top: 3px;}
+.registro-descripcion { padding-bottom: 16px;}
+
+/* Cambia posicion y tamaño de ojo */
+.input-eye {position: absolute;top: 65%;right: 50px;transform: translateY(-50%);width: 26px;height: 26px;cursor: pointer;display: flex;align-items: center; z-index: 2;}
+.input-eye img { width:30px;height: 30px;} 
+
+
+/* Estilo de los botones de registro */
+.botones-registro {display: flex;justify-content: center; align-items: center;gap: 10px; margin-top: 20px;}
+
+.btn.boton-volver {width: 30%;font-weight: 500; background-color: #F3EDE1;border: 1px solid #198683;color: #198683;padding: 10px;text-align: center;border-radius: 5px;
+}
+
+.btn.boton-registrar{width: 60%;font-weight: 500;background-color: #198683;border: 1px solid #198683;color: #F3EDE1;padding: 10px;text-align: center;border-radius: 5px;
+}
+
+.boton-iniciar-sesion {color: #198683;text-decoration: none;font-weight: 700}
+
+
+
+/* de aqui para abajo solo agregar clases en los @media */
+@media (min-width: 100px) and (max-width: 767.99px) {  
+
+.boton-volver {
+        display: none;
+    }
+    
+.input-eye {position: absolute;top: 75%;right: 40px;transform: translateY(-50%);width: 26px;height: 26px;cursor: pointer;display: flex;align-items: center; z-index: 2;}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992.99px) {
+
+.boton-volver {
+        display: none;
+    }
+}
+.input-eye {position: absolute;top: 72%;right: 50px;transform: translateY(-50%);width: 26px;height: 26px;cursor: pointer;display: flex;align-items: center; z-index: 2;}
+
+
+/* Desde 993px en adelante: vuelve al centrado y tamaño normal */
+@media (min-width: 993px) {
+  .boton-regresar {
+        display: none;
+    }
+
+    .input-eye {position: absolute;top: 66%;right: 50px;transform: translateY(-50%);width: 26px;height: 26px;cursor: pointer;display: flex;align-items: center; z-index: 2;}
+}

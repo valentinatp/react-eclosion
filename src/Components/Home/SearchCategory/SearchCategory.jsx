@@ -8,6 +8,7 @@ const SearchCategory = () => {
 
     return (
         <>
+<<<<<<< HEAD
             <section className="container-fluid pb-4">
                 <div className="row">
                     <div className="col">
@@ -19,6 +20,9 @@ const SearchCategory = () => {
                 <div id="contentCards"></div>
                 
             </section>
+=======
+            <h2>SearchCategory</h2>
+>>>>>>> e858e2322991d83837175299a5158049b1c63452
         </>
     )
 }
