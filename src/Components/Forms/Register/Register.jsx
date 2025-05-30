@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 // import { useNavigate } from "react-router-dom";
 import './register-style.css'
-import imagenesRegister from "../../../assets/imagenes-register";
 import LoadingRegister from "./loading-register";
+import imagenesRegister from "../../../assets/imagenes-register";
+import { Link } from 'react-router-dom';
 
 {/* Funcion de comprobacion de la contraseña */}
 function Register() {
