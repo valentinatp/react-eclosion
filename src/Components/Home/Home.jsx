@@ -1,9 +1,10 @@
+import CardsNews from "./CardsNews/CardsNews";
 import SearchCategory from "./SearchCategory/SearchCategory";
 
 const Home = () => {
     return (
         <>
-            <h1>Hola mundo home</h1>
+            <CardsNews />
             <SearchCategory />
         </>
     )
