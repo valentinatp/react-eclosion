@@ -1,20 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import './register-style.css'
+import imagenesRegister from "../../assets/imagenes-register";
 
+{/* Funcion de comprobacion de la contraseña */}
 function Register() {
+            const [showPassword, setShowPassword] = useState(false);
+            const [showConfirm, setShowConfirm] = useState(false);
+            const [password, setPassword] = useState("");
+            const [confirmPassword, setConfirmPassword] = useState("");
+            const [error, setError] = useState(false);
+            const [success, setSuccess] = useState(false);
+{/* Funcion de redireccion si inicia sesion correctamente */}
+            const handleSubmit = (e) => {
+              e.preventDefault();
+              if (password !== confirmPassword) {
+                setError(true);
+                setSuccess(false);
+              } else {
+                setError(false);
+                setSuccess(true);
+                setTimeout(() => {
+                  window.location.href = "/"; // Cambia la ruta si es necesario 2 s
+                }, 2000);
+              }
+            };
+
   return (
     <>
       <a href="/" className="form-label fw-bold modal-content boton-regresar">
-        <img src="" alt="Volver" /> {/*falta añadir svg de volver*/}
+        <img src={imagenesRegister.img1}  alt="Volver" /> 
       </a>
       <div className="container mt-5 registro-container">
-        <h1 className="text-start fs-2 fw-bold registro-titulo">Registro</h1>;
+        <h1 className="text-start fs-2 fw-bold registro-titulo">Registro</h1>
         <div className="row justify-content-center">
           <p className="text-start fs-6 registro-descripcion">
             <span className="fw-bold">Regístrate</span> ingresando los siguientes datos
           </p>
         </div>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="nombre" className="form-label fw-bold">Nombre</label>
             <input
@@ -45,42 +68,60 @@ function Register() {
               required
             />
           </div>
+
+
+           {/*nuevo formato para react*/}
           <div className="mb-3 position-relative">
             <label htmlFor="password" className="form-label fw-bold">Contraseña</label>
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               className="form-control auto-input border border-secondary border-2 imput-password"
               id="password"
               placeholder="Contraseña"
               required
+              value={password}
+              onChange={e => setPassword(e.target.value)}
             />
-            <span className="input-eye">
-              <img src="" id="icon-password" alt="Ver contraseña" /> {/*falta añadir svg de ojo*/}
+            <span className="input-eye" onClick={() => setShowPassword(!showPassword)}style={{ cursor: "pointer" }}>
+              <img src={showPassword ? imagenesRegister.img3 : imagenesRegister.img2} id="icon-password" alt="Ver contraseña" />
             </span>
           </div>
           <div className="mb-3 position-relative">
             <label htmlFor="confirmPassword" className="form-label fw-bold">Confirmar Contraseña</label>
             <input
-              type="password"
+              type={showConfirm ? "text" : "password"}
               className="form-control auto-input border border-secondary border-2 imput-password"
               id="confirmPassword"
               placeholder="Confirmar contraseña"
               required
+              value={confirmPassword}
+              onChange={e => setConfirmPassword(e.target.value)}
             />
-            <span className="input-eye">
-              <img src="" alt="icono ojo cerrado" id="icon-confirmPassword" />  {/*falta añadir svg de ojo*/}
+            <span className="input-eye" onClick={() => setShowConfirm(!showConfirm)} style={{ cursor: "pointer" }} >
+              <img src={showConfirm ? imagenesRegister.img3 : imagenesRegister.img2} alt="icono ojo cerrado" id="icon-confirmPassword" />  
             </span>
           </div>
-          <div className="form-text text-danger d-none" id="passwordError">
+
+
+         {/*nuevo formato para react*/}
+
+          {error && (
+          <div className="form-text text-danger " id="passwordError">
             Las contraseñas no coinciden.
           </div>
+           )}
           <div className="botones-registro">
             <a href="/" className="btn boton-volver">Volver</a>
             <button type="submit" className="btn boton-registrar">Registrar</button>
           </div>
-          <div id="registroExitoso" className="alert alert-success d-none" role="alert">
+         
+          {success && (
+          <div id="registroExitoso" className="alert alert-success " role="alert">
             ¡Se registró correctamente!
           </div>
+          )}
+
+
           <div className="text-center mt-3">
             <span>
               ¿Ya tienes una cuenta?

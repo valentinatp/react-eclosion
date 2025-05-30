@@ -1,7 +1,7 @@
 import './App.css'
 import Home from './Components/Home/Home'
 import Navbar from './Components/Navbar/Navbar'
-import Register from './Components/Register/register'
+import Register from './Components/register/register'
 
 
 function App() {
