@@ -40,7 +40,7 @@ const CardsNews = () => {
                                 {/* CARDS MOBILE*/}
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
-                                        <div className="card">
+                                        <div className="container-cards-home card">
                                             <img
                                                 src="https://cientificosdelabasura.ucn.cl/wp-content/uploads/2025/02/Image-3-768x509.jpg"
                                                 className="card-img-top"
@@ -64,7 +64,7 @@ const CardsNews = () => {
                                         </div>
                                     </div>
                                     <div className="carousel-item">
-                                        <div className="card">
+                                        <div className="container-cards-home card">
                                             <img
                                                 src="https://cientificosdelabasura.ucn.cl/wp-content/uploads/2023/02/WhatsApp-Image-2022-07-25-at-12.21.48-PM.jpeg"
                                                 className="card-img-top"
@@ -88,7 +88,7 @@ const CardsNews = () => {
                                         </div>
                                     </div>
                                     <div className="carousel-item">
-                                        <div className="card">
+                                        <div className="container-cards-home card">
                                             <img
                                                 src="https://services.meteored.com/img/article/las-basuras-de-las-playas-298581-7.jpeg"
                                                 className="card-img-top"
@@ -140,7 +140,7 @@ const CardsNews = () => {
                     <div className="row">
                         <div className="col">
                             <div className="container-cards">
-                                <div className="card">
+                                <div className="container-cards-home card">
                                     <img
                                         src="https://cientificosdelabasura.ucn.cl/wp-content/uploads/2025/02/Image-3-768x509.jpg"
                                         className="card-img-top"
@@ -161,7 +161,7 @@ const CardsNews = () => {
                                     </div>
                                 </div>
                                 {/* Card 2 */}
-                                <div className="card">
+                                <div className="container-cards-home card">
                                     <img
                                         src="https://cientificosdelabasura.ucn.cl/wp-content/uploads/2023/02/WhatsApp-Image-2022-07-25-at-12.21.48-PM.jpeg"
                                         className="card-img-top"
@@ -182,7 +182,7 @@ const CardsNews = () => {
                                     </div>
                                 </div>
                                 {/* Card 3 */}
-                                <div className="card">
+                                <div className="container-cards-home card">
                                     <img
                                         src="https://services.meteored.com/img/article/las-basuras-de-las-playas-298581-7.jpeg"
                                         className="card-img-top"
