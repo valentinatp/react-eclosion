@@ -1,0 +1,33 @@
+@import url(./CarouselButtons/carousel-buttons-style.css);
+
+.container-cards-categories { display: flex; overflow: hidden; overflow-x: scroll; }
+.cards-categories.card { padding: 1rem; margin-right: 0.5rem; }
+.cards-categories.card .card-image { width: auto; border-radius: 0.5rem; height: 200px;  margin-bottom: 1rem; }
+.cards-categories.card .card-body { padding: 0; }
+.cards-categories.card .card-body .card-title { word-break: break-all; font-size: 20px; }
+.cards-categories.card .card-body .card-text { font-size: 18px; height: auto; max-height: 170px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cards-categories.card .card-body .btn { border-radius: 0.3rem; }
+
+.container-cards-categories #playas, .container-cards-categories #oceanos { display: none; }
+
+@media (max-width: 767px) { 
+    .container-cards-categories { overflow: hidden; overflow-x: scroll; }
+    .cards-categories.card { padding: 1rem; min-width: 90%; margin-right: 0.5rem; }
+
+}
+/*Resolucion tablet*/
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+/*Resolucion desktop*/
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    .btn { width: 100%; height: 40px; }
+}
+/*Resolucion desktop*/
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+/*Resolucion desktop*/
+/*XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }

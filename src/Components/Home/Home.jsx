@@ -1,27 +1,12 @@
 import SearchCategory from "./SearchCategory/SearchCategory";
-import { Link } from 'react-router-dom';
+import TextWelcome from "./TextWelcome/TextWelcome";
+
 
 
 const Home = () => {
     return (
         <>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-            <h1>Hola mundo home</h1>
-
+            <TextWelcome />
             <SearchCategory />
         </>
     )
