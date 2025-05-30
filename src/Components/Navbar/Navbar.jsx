@@ -19,22 +19,22 @@ const Navbar = () => {
                         id="navbarSupportedContent">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="index.html"><Link to="/">Home</Link></a>
+                                <Link to="/" className="nav-link">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link disabled" href="about-us.html">Quiénes somos</a>
+                                <Link to="/" className="nav-link disabled">¿Quiénes somos?</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="feed.html">Feed</a>
+                                <Link to="/src/Components/Feed/Feed.jsx" className="nav-link">Feed</Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perfil</a>
                                 <ul className="dropdown-menu">
                                     <li>
-                                        <a className="dropdown-item" href="registration.html">Registrar</a>
+                                        <Link to="/src/Components/Forms/Register/Register.jsx" className="dropdown-item">Registrar</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" id="openLoginModal">Iniciar sesión</a>
+                                        <Link to="/" className="dropdown-item" id="openLoginModal">Iniciar sesión</Link>
                                     </li>
                                 </ul>
                             </li>
