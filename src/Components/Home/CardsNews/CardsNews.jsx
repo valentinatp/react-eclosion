@@ -1,8 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import "./cardsnews-style.css";
+import React from 'react';
 
-import React from 'react'
 
 const CardsNews = () => {
+    const navigate = useNavigate();
     return (
         <>
             {/* Primer carrusel */}
@@ -57,9 +59,9 @@ const CardsNews = () => {
                                                     desechables y fomentar el uso de envases retornables
                                                     estandarizados...
                                                 </p>
-                                                <a href="feed.html" className="btn btn-primary">
+                                                <button className="btn btn-primary" onClick={() => navigate("/feed.html")}>
                                                     Link Noticia
-                                                </a>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
