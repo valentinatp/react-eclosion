@@ -41,7 +41,9 @@
 .container-cards-visibility-tablet { display: none; }
 .container-cards-visibility-desktop { display: none; }
 
-    
+.carousel-caption-desktop {
+
+}    
 
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap

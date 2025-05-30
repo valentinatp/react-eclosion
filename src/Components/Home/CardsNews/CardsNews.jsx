@@ -1,5 +1,5 @@
 import "./cardsnews-style.css";
-
+import { Link } from 'react-router-dom';
 import React from 'react'
 
 const CardsNews = () => {
@@ -57,8 +57,8 @@ const CardsNews = () => {
                                                     desechables y fomentar el uso de envases retornables
                                                     estandarizados...
                                                 </p>
-                                                <a href="feed.html" className="btn btn-primary">
-                                                    Link Noticia
+                                                <a>
+                                                    <Link className="btn btn-primary" to="/feed"> Link Noticia </Link>
                                                 </a>
                                             </div>
                                         </div>
@@ -81,8 +81,8 @@ const CardsNews = () => {
                                                     vida submarina desde cualquier lugar gracias a una cámara
                                                     en el fondo de Coquimbo...
                                                 </p>
-                                                <a href="feed.html" className="btn btn-primary">
-                                                    Link Noticia
+                                                <a>
+                                                    <Link className="btn btn-primary" to="/feed"> Link Noticia </Link>
                                                 </a>
                                             </div>
                                         </div>
@@ -105,8 +105,8 @@ const CardsNews = () => {
                                                     del Pacífico es principalmente de origen local y
                                                     contribuye con una primera base...
                                                 </p>
-                                                <a href="#" className="btn btn-primary">
-                                                    Link Noticia
+                                                <a>
+                                                    <Link className="btn btn-primary" to="/feed"> Link Noticia </Link>
                                                 </a>
                                             </div>
                                         </div>
@@ -155,8 +155,8 @@ const CardsNews = () => {
                                             El 59% de las botellas recolectadas tienen origen local, lo
                                             que subraya la urgencia...
                                         </p>
-                                        <a href="feed.html" className="btn btn-primary">
-                                            Link Noticia
+                                        <a>
+                                            <Link className="btn btn-primary" to="/feed"> Link Noticia </Link>
                                         </a>
                                     </div>
                                 </div>
@@ -176,8 +176,8 @@ const CardsNews = () => {
                                             Chile tiene una de las costas más largas del mundo, con fauna
                                             marina diversa y endémica. Ahora se puede ver la vida...
                                         </p>
-                                        <a href="#" className="btn btn-primary">
-                                            Link Noticia
+                                        <a>
+                                            <Link className="btn btn-primary" to="/feed"> Link Noticia </Link>
                                         </a>
                                     </div>
                                 </div>
@@ -198,8 +198,8 @@ const CardsNews = () => {
                                             El estudio determinó que la basura marina en la costa este del
                                             Pacífico es principalmente de origen local y contribuye con...
                                         </p>
-                                        <a href="#" className="btn btn-primary">
-                                            Link Noticia
+                                        <a>
+                                            <Link className="btn btn-primary" to="/feed"> Link Noticia </Link>
                                         </a>
                                     </div>
                                 </div>
@@ -244,7 +244,7 @@ const CardsNews = () => {
                                         className="img-desktop"
                                         alt="card1"
                                     />
-                                    <div className="carousel-caption d-none d-md-block">
+                                    <div className="carousel-caption-desktop d-none d-md-block">
                                         <h5>
                                             ¿De dónde vienen las botellas plásticas encontradas en las
                                             playas del océano Pacífico y en ciudades Latinoamericanas?
