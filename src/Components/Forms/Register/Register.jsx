@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+// import { useNavigate } from "react-router-dom";
 import './register-style.css'
-import imagenesRegister from "../../../../assets/imagenes-register";
+import imagenesRegister from "../../../assets/imagenes-register";
+import LoadingRegister from "./loading-register";
 
 {/* Funcion de comprobacion de la contraseña */}
 function Register() {
@@ -10,6 +12,7 @@ function Register() {
             const [confirmPassword, setConfirmPassword] = useState("");
             const [error, setError] = useState(false);
             const [success, setSuccess] = useState(false);
+            const [loading, setLoading] = useState(false);
 {/* Funcion de redireccion si inicia sesion correctamente */}
             const handleSubmit = (e) => {
               e.preventDefault();
@@ -17,13 +20,23 @@ function Register() {
                 setError(true);
                 setSuccess(false);
               } else {
-                setError(false);
-                setSuccess(true);
-                setTimeout(() => {
-                  window.location.href = "/"; // Cambia la ruta si es necesario 2 s
-                }, 2000);
-              }
-            };
+                     setError(false);
+                      setSuccess(true);
+                      setTimeout(() => {
+                        setLoading(true);
+                        setSuccess(false);
+                        setTimeout(() => {
+                          setLoading(false);
+                          setPassword("");
+                          setConfirmPassword("");
+                          // navigate("/"); agregar pag principal
+        }, 2000); // tiempo que se muestra LoadingRegister
+      }, 2000); // tiempo que se muestra el mensaje de éxito
+    }
+  };
+
+            
+            if (loading) return <LoadingRegister />;
 
   return (
     <>

@@ -134,8 +134,10 @@
 .boton-volver {
         display: none;
     }
+
+    .input-eye {position: absolute;top: 72%;right: 50px;transform: translateY(-50%);width: 26px;height: 26px;cursor: pointer;display: flex;align-items: center; z-index: 2;}
 }
-.input-eye {position: absolute;top: 72%;right: 50px;transform: translateY(-50%);width: 26px;height: 26px;cursor: pointer;display: flex;align-items: center; z-index: 2;}
+
 
 
 /* Desde 993px en adelante: vuelve al centrado y tamaño normal */
