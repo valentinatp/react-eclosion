@@ -23,6 +23,11 @@
 
 .boton-iniciar-sesion {color: #198683;text-decoration: none;font-weight: 700}
 
+.reedireccionando {
+font-size: 2rem;
+  color: #1d3557;
+
+}
 
 
 /* de aqui para abajo solo agregar clases en los @media */
