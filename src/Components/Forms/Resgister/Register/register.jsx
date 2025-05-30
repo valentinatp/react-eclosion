@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './register-style.css'
-import imagenesRegister from "../../assets/imagenes-register";
+import imagenesRegister from "../../../../assets/imagenes-register";
 
 {/* Funcion de comprobacion de la contraseña */}
 function Register() {
