@@ -15,7 +15,7 @@ const CardSearchCategories = () => {
                                         <h5 className="card-title">{news.title}</h5>
                                         <p className="card-text"> { news.paragraph } </p>
                                     </div>
-                                    <button className="btn btn-primary"><Link to="/src/Components/Feed/Feed.jsx" /> </button>
+                                    <button className="btn btn-primary"><Link to="/src/Components/Feed/Feed.jsx" />Ir a la noticia</button>
                                 </div>
                             ))
                         }
