@@ -74,9 +74,7 @@ p.card-text {
         scrollbar-width: none;
     }
     .container-cards-visibility-desktop { display: none;}
-    .btn.btn-primary {
-        align-self: flex-start;
-    }
+
 }
 /*Resolucion desktop*/
 /* Large devices (desktops, 992px and up)*/
