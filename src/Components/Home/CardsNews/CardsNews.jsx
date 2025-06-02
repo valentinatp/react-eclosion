@@ -49,7 +49,7 @@ const CardsNews = () => {
                                             <div className="card-body">
                                                 <h5 className="card-title">
                                                     ¿De dónde vienen las botellas plásticas encontradas en las
-                                                    playas del océano Pacífico y en ciudades Latinoamericanas?
+                                                    playas del océano Pacífico?
                                                 </h5>
                                                 <p className="card-text">
                                                     El 59% de las botellas recolectadas tienen origen local,
@@ -149,11 +149,11 @@ const CardsNews = () => {
                                     <div className="card-body">
                                         <h5 className="card-title">
                                             ¿De dónde vienen las botellas plásticas encontradas en las
-                                            playas del océano Pacífico y en ciudades Latinoamericanas?
+                                            playas del océano Pacífico?
                                         </h5>
                                         <p className="card-text">
                                             El 59% de las botellas recolectadas tienen origen local, lo
-                                            que subraya la urgencia...
+                                            que subraya la urgencia de reducir el uso de plásticos desechables...
                                         </p>
                                         <a>
                                             <Link className="btn btn-primary" to="/feed"> Link Noticia </Link>
@@ -190,13 +190,12 @@ const CardsNews = () => {
                                     />
                                     <div className="card-body">
                                         <h5 className="card-title">
-                                            Basura en la playa: Publican resultados de investigación de
-                                            ciencia ciudadana que abarcó 12.000 km de la costa este del
-                                            Pacífico
+                                            Basura en la playa: Publican resultados de investigación 
+                                            que abarcó 12.000 km de la costa este del Pacífico
                                         </h5>
                                         <p className="card-text">
-                                            El estudio determinó que la basura marina en la costa este del
-                                            Pacífico es principalmente de origen local y contribuye con...
+                                            El estudio determinó que la basura en la costa este del
+                                            Pacífico es principalmente de origen local...
                                         </p>
                                         <a>
                                             <Link className="btn btn-primary" to="/feed"> Link Noticia </Link>
@@ -244,10 +243,10 @@ const CardsNews = () => {
                                         className="img-desktop"
                                         alt="card1"
                                     />
-                                    <div className="carousel-caption-desktop d-none d-md-block">
+                                    <div className="carousel-caption d-none d-md-block">
                                         <h5>
                                             ¿De dónde vienen las botellas plásticas encontradas en las
-                                            playas del océano Pacífico y en ciudades Latinoamericanas?
+                                            playas del océano Pacífico?
                                         </h5>
                                         <p>
                                             El 59% de las botellas recolectadas tienen origen local, lo
@@ -280,9 +279,8 @@ const CardsNews = () => {
                                     />
                                     <div className="carousel-caption d-none d-md-block">
                                         <h5>
-                                            Basura en la playa: Publican resultados de investigación de
-                                            ciencia ciudadana que abarcó 12.000 km de la costa este del
-                                            Pacífico
+                                            Basura en la playa: Publican resultados de investigación
+                                            que abarcó 12.000 km de la costa este del Pacífico
                                         </h5>
                                         <p>
                                             El estudio determinó que la basura marina en la costa este del
