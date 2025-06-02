@@ -244,7 +244,7 @@ const CardsNews = () => {
                                         className="img-desktop"
                                         alt="card1"
                                     />
-                                    <div className="carousel-caption-desktop d-none d-md-block">
+                                    <div className="carousel-caption d-none d-md-block">
                                         <h5>
                                             ¿De dónde vienen las botellas plásticas encontradas en las
                                             playas del océano Pacífico y en ciudades Latinoamericanas?

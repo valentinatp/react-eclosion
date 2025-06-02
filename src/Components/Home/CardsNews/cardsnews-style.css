@@ -4,9 +4,7 @@
 .carousel .carousel-indicators button { background-color: #68BDB8; border: 2px solid #198683; width: 8px; height: 8px; border-radius: 50%; }
 .carousel-indicators { margin-bottom: 0.5rem; }
 .carousel-control-prev-icon, .carousel-control-next-icon { display: none; }
-.container-cards-visibility-tablet {
-    display: none;
-}
+
 
 /* Cards */
 .container-cards-home.card {
@@ -15,7 +13,7 @@
     margin-top: 24px;
     margin-bottom: 32px;
 }
-.container-cards-home.card .container-cards { 
+.container-cards { 
     display: flex; 
     overflow: hidden; 
     overflow-x: scroll; 
@@ -41,10 +39,6 @@
 .container-cards-visibility-tablet { display: none; }
 .container-cards-visibility-desktop { display: none; }
 
-.carousel-caption-desktop {
-
-}    
-
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 /*Resolucion Mobile*/
@@ -56,13 +50,13 @@
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     
-    .container-cards-visibility-tablet .card{ 
+    .container-cards-visibility-tablet .container-cards-home.card{ 
         width: 520px; 
         height: 500px; 
         margin-right: 30px; }
-    .card-img-top {height: 180px;}
-    .card-title {font-size: 20px;}
-    .card-text {font-size: 17px;}
+    .container-cards-home.card .card-img-top {height: 180px;}
+    .container-cards-home.card .card-title {font-size: 20px;}
+    .container-cards-home.card .card-text {font-size: 17px;}
     .container-cards-visibility-mobile { display: none; }
     .container-cards-visibility-tablet { 
         width: 100%;
