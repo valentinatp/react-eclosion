@@ -23,12 +23,10 @@
 }*/
 .img-desktop {
     width: 100%;
-    height: 100%;
+    height: 550px;
     object-fit: cover;
 }
-.carousel-item{
-    height: 460px;
-}
+
 .container-cards-home.card .card-title {
     color: #093246;
 }
@@ -44,17 +42,26 @@
 /*Resolucion Mobile*/
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-    .carousel-control-prev-icon, .carousel-control-next-icon { background-color: black; border-radius: 50%; opacity: 0.3;}
+.carousel-control-prev-icon, .carousel-control-next-icon { background-color: black; border-radius: 50%; opacity: 0.3;}
+}
+.container-cards-home.card {
+    max-width: 400px;
+}
+.card-img-top {
+    height: 180px;
+}
+p.card-text {
+    font-size: 14px;
 }
 /*Resolucion Tablet*/
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     
     .container-cards-visibility-tablet .container-cards-home.card{ 
-        width: 520px; 
+        width: 400px; 
         height: 500px; 
         margin-right: 30px; }
-    .container-cards-home.card .card-img-top {height: 180px;}
+    .container-cards-home.card .card-img-top {height: 200px;}
     .container-cards-home.card .card-title {font-size: 20px;}
     .container-cards-home.card .card-text {font-size: 17px;}
     .container-cards-visibility-mobile { display: none; }
@@ -67,6 +74,9 @@
         scrollbar-width: none;
     }
     .container-cards-visibility-desktop { display: none;}
+    .btn.btn-primary {
+        align-self: flex-start;
+    }
 }
 /*Resolucion desktop*/
 /* Large devices (desktops, 992px and up)*/
