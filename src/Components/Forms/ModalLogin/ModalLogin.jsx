@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ModalLogin = ({ closeModal }) => {
     return (
@@ -25,7 +26,7 @@ const ModalLogin = ({ closeModal }) => {
                                 <button type="button" className="btn btn-success fw-bold btn-extra" onClick={closeModal}>Cancelar</button>
                                 <button type="submit" className="btn btn-secondary w-100 fw-bold">Iniciar sesión</button>
                             </div>
-                            <p className="mt-4 text-center register-link">¿No tienes una cuenta? <a href="registration.html">Registrate.</a></p>
+                            <p className="mt-4 text-center register-link">¿No tienes una cuenta? <Link to="/register">Registrate.</Link></p>
                         </form>
                     </div>
                 </div>
