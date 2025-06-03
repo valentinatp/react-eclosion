@@ -6,8 +6,8 @@ const CardsNews = () => {
     return (
         <>
             {/* Primer carrusel */}
-            <main className="container-fluid">
-                <section className="container-cards-visibility-mobile">
+            <section className="container-fluid p-0">
+                <div className="container-cards-visibility-mobile">
                     <div className="row">
                         <div className="col">
                             <div
@@ -133,9 +133,9 @@ const CardsNews = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
                 {/* CAROUSEL TABLET */}
-                <section className="container-cards-visibility-tablet">
+                <div className="container-cards-visibility-tablet">
                     {/* Card 1 */}
                     <div className="row">
                         <div className="col">
@@ -205,8 +205,8 @@ const CardsNews = () => {
                             </div>
                         </div>
                     </div>
-                </section>
-                <section className="container-cards-visibility-desktop">
+                </div>
+                <div className="container-cards-visibility-desktop">
                     {/* CAROUSEL DESKTOP */}
                     <div
                         id="carouselExampleIndicators"
@@ -309,9 +309,9 @@ const CardsNews = () => {
                             </button>
                         </div>
                     </div>
-                </section>
+                </div>
                 {/* Fin Carrusel Desktop */}
-            </main>
+            </section>
         </>
 
     )
