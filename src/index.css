@@ -3,7 +3,8 @@
 @import url(./Components/Footer/footer-style.css);
 @import url(./Components/Forms/forms-style.css);
 @import url(./Components/Home/SearchCategory/search-category.css);
-@import url(./Components/Home/CardsNews/cardsnews-style.css);
+/*@import url(./Components/Home/CardsNews/cardsnews-style.css);*/
+@import url(./Components/Home/CardsNews/pruebacards-style.css);
 @import url(./Components/Forms/ModalLogin/modalStyle.css);
 @import url(./Components/Forms/Register/register-style.css);
 @import url(./Components/Navbar/navbar-style.css);

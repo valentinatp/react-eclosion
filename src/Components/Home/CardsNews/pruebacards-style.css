@@ -1,0 +1,5 @@
+.carousel { padding: 0 16px; }
+.container-cards-visibility-desktop .carousel { padding: 0 ; }
+.carousel .carousel-indicators button { background-color: #68BDB8; border: 2px solid #198683; width: 8px; height: 8px; border-radius: 50%; }
+.carousel-indicators { margin-bottom: 0.5rem; }
+.carousel-control-prev-icon, .carousel-control-next-icon { display: none; }

@@ -7,6 +7,7 @@ import Register from './Components/Forms/Register/register'
 import Feed from './Components/Feed/Feed'
 
 
+
 export const router = createBrowserRouter(
     createRoutesFromElements(
         // un componente "Route" por cada ruta
