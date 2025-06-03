@@ -35,7 +35,11 @@
   justify-content: center;
 }
 
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
 
+}
 /* de aqui para abajo agregar las clases  generales, sin pasarse los  */
 
 

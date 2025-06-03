@@ -1,5 +1,7 @@
+
 import { useState } from 'react';
 import './feed-style.css';
+import { Link } from 'react-router-dom';
 
 function Feed() {
   const [liked, setLiked] = useState([false, false]);
@@ -145,3 +147,6 @@ function Feed() {
 }
 
 export default Feed;
+
+
+

@@ -13,7 +13,7 @@ export const router = createBrowserRouter(
         <Route path="/" element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/Feed" element={<Feed />} />
+            <Route path="/feed" element={<Feed />} />
             <Route path="/ejemplo" element={<h1>Hola ejemplo</h1>} />
         </Route>
     )

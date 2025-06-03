@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import './register-style.css'
+import LoadingRegister from "./loading-register";
 import imagenesRegister from "../../../assets/imagenes-register";
 import { Link } from 'react-router-dom';
 
@@ -10,6 +13,8 @@ function Register() {
             const [confirmPassword, setConfirmPassword] = useState("");
             const [error, setError] = useState(false);
             const [success, setSuccess] = useState(false);
+            const [loading, setLoading] = useState(false);
+            const navigate = useNavigate();
 {/* Funcion de redireccion si inicia sesion correctamente */}
             const handleSubmit = (e) => {
               e.preventDefault();
@@ -17,17 +22,28 @@ function Register() {
                 setError(true);
                 setSuccess(false);
               } else {
-                setError(false);
-                setSuccess(true);
-                setTimeout(() => {
-                  window.location.href = "/"; // Cambia la ruta si es necesario 2 s
-                }, 2000);
-              }
-            };
+                     setError(false);
+                      setSuccess(true);
+                      setTimeout(() => {
+                        setLoading(true);
+                        setSuccess(false);
+                        setTimeout(() => {
+                          setLoading(false);
+                          setPassword("");
+                          setConfirmPassword("");
+                          navigate("/");
+        }, 6000); // tiempo que se muestra LoadingRegister
+      }, 2000); // tiempo que se muestra el mensaje de éxito
+    }
+  };
+
+            
+            if (loading) return <LoadingRegister />;
 
   return (
     <>
-      <a href="/" className="form-label fw-bold modal-content boton-regresar">
+      <div Classname="full-page-register">
+      <a href="/" className="boton-regresar">
         <img src={imagenesRegister.img1}  alt="Volver" /> 
       </a>
       <div className="container mt-5 registro-container">
@@ -42,7 +58,7 @@ function Register() {
             <label htmlFor="nombre" className="form-label fw-bold">Nombre</label>
             <input
               type="text"
-              className="form-control border border-secondary border-2"
+              className="form-control border border-secondary border-2 input-size"
               id="nombre"
               placeholder="Ingresa tu nombre"
               required
@@ -52,7 +68,7 @@ function Register() {
             <label htmlFor="email" className="form-label fw-bold">Email</label>
             <input
               type="email"
-              className="form-control border border-secondary border-2"
+              className="form-control border border-secondary border-2 input-size"
               id="email"
               placeholder="ejemplo@correo.com"
               required
@@ -62,7 +78,7 @@ function Register() {
             <label htmlFor="edad" className="form-label fw-bold">Edad</label>
             <input
               type="number"
-              className="form-control border border-secondary border-2"
+              className="form-control border border-secondary border-2 input-size"
               id="edad"
               placeholder="Ingresa tu edad"
               required
@@ -75,7 +91,7 @@ function Register() {
             <label htmlFor="password" className="form-label fw-bold">Contraseña</label>
             <input
               type={showPassword ? "text" : "password"}
-              className="form-control auto-input border border-secondary border-2 imput-password"
+              className="form-control border border-secondary border-2 imput-password input-size"
               id="password"
               placeholder="Contraseña"
               required
@@ -90,7 +106,7 @@ function Register() {
             <label htmlFor="confirmPassword" className="form-label fw-bold">Confirmar Contraseña</label>
             <input
               type={showConfirm ? "text" : "password"}
-              className="form-control auto-input border border-secondary border-2 imput-password"
+              className="form-control border border-secondary border-2 imput-password input-size"
               id="confirmPassword"
               placeholder="Confirmar contraseña"
               required
@@ -130,6 +146,7 @@ function Register() {
           </div>
         </form>
       </div>
+    </div>
      
     </>
   );

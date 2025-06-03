@@ -1,6 +1,16 @@
 import { Link } from 'react-router-dom';
+import { useState } from "react";
+import ModalLogin from '../Forms/ModalLogin/ModalLogin.jsx';
 
 const Navbar = () => {
+    // Estado para controlar la visibilidad del modal
+    const [modalToggled, setmodalToggled] = useState(false);
+
+    // Función para alternar el estado del modal (abrir/cerrar)
+    function handleModalToggleClick() {
+        setmodalToggled(!modalToggled);
+    }
+
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -15,26 +25,26 @@ const Navbar = () => {
                             </span>
                         </button>
                     </div>
-                    <div className="collapse navbar-collapse"
-                        id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="index.html"><Link to="/">Home</Link></a>
+                                <Link to="/" className="nav-link">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link disabled" href="about-us.html">Quiénes somos</a>
+                                <Link to="/" className="nav-link disabled">¿Quiénes somos?</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="feed.html">Feed</a>
+                                <Link to="feed" className="nav-link">Feed</Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perfil</a>
                                 <ul className="dropdown-menu">
                                     <li>
-                                        <a className="dropdown-item" href="registration.html">Registrar</a>
+                                        <Link to="/register" className="dropdown-item">Registrar</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" id="openLoginModal">Iniciar sesión</a>
+                                        {/* Botón para abrir el modal de inicio de sesión */}
+                                        <button className="dropdown-item" onClick={handleModalToggleClick}>Iniciar Sesion</button>
                                     </li>
                                 </ul>
                             </li>
@@ -42,8 +52,14 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
+            {/* Renderiza el modal solo si modalToggled es true */}
+            {modalToggled && (
+                <div>
+                    <ModalLogin closeModal={() => setmodalToggled(false)} />
+                </div>
+            )}
         </>
-    )
-}
+    );
+};
 
 export default Navbar;
