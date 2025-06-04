@@ -1,4 +1,3 @@
-@import url(./Components/Cards/cards-style.css);
 @import url(./Components/Feed/feed-style.css);
 @import url(./Components/Footer/footer-style.css);
 @import url(./Components/Forms/forms-style.css);
@@ -7,7 +6,9 @@
 @import url(./Components/Forms/ModalLogin/modalStyle.css);
 @import url(./Components/Forms/Register/register-style.css);
 @import url(./Components/Navbar/navbar-style.css);
-@import url(./Components/Home/SearchCategory/search-category.css);
+@import url(./Components/Home/home-style.css);
+@import url(./Components/Home/SearchCategory/CarouselButtons/carousel-buttons-style.css);
+
 
 /* ESTILOS GENERALES - NO MODIFICAR */
 .colores-paleta-01 { background-color: #093246; }
@@ -21,8 +22,8 @@ h1 { font-size: 25px; }
 h2 { font-size: 22px; }
 h3 { font-size: 21px; }
 p { color: #284D5D;  font-size: 16px; }
-img { width: 100px; height: 100px; }
-footer { background-color: #093246; padding: 1rem 0; color: #F3EDE1; font-size: 0.8rem; }
+img { height: auto; width: 100%; }
+
 .text-justify { text-align: justify; }
 .title-site, .subtitle-site { text-align: center; }
 
