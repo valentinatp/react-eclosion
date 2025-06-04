@@ -75,7 +75,7 @@ function Register() {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="edad" className="form-label fw-bold">Edad</label>
+            <label htmlFor="edad" className="form-label fw-bold ">Edad</label>
             <input
               type="number"
               className="form-control border border-secondary border-2 input-size"
@@ -88,7 +88,7 @@ function Register() {
 
            {/*nuevo formato para react*/}
           <div className="mb-3 position-relative">
-            <label htmlFor="password" className="form-label fw-bold">Contraseña</label>
+            <label htmlFor="password" className="form-label fw-bold ">Contraseña</label>
             <input
               type={showPassword ? "text" : "password"}
               className="form-control border border-secondary border-2 imput-password input-size"
@@ -138,8 +138,8 @@ function Register() {
           )}
 
 
-          <div className="text-center mt-3">
-            <span>
+          <div className="text-center mt-3 centrado-span">
+            <span className="">
               ¿Ya tienes una cuenta?
               <a href="/login" className="boton-iniciar-sesion">Inicia sesión</a>
             </span>
