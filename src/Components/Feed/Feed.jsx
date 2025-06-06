@@ -4,17 +4,24 @@ import './feed-style.css';
 import { Link } from 'react-router-dom';
 
 function Feed() {
-  const [liked, setLiked] = useState([false, false]);
+    const [show, setShow] = useState(false);
 
-  const handleLike = (index) => {
-    setLiked((prev) => {
-      const updated = [...prev];
-      updated[index] = !updated[index];
-      return updated;
-    });
-  };
+    // Funciones para abrir y cerrar el modal
+    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
 
-  return (
+    // Estado para manejar los "me gusta" en las tarjetas
+    const [liked, setLiked] = useState([false, false]);
+
+    const handleLike = (index) => {
+        setLiked((prev) => {
+            const updated = [...prev];
+            updated[index] = !updated[index];
+            return updated;
+        });
+    };
+
+    return (
         <>
             {/* Contenido de pagina */}
             <br />
@@ -63,6 +70,7 @@ function Feed() {
                                             Seguir leyendo
                                         </a>
                                     </p>
+                                    {/* Botones de interacción */}
                                     <div className="btn-group-feed">
                                         <button
                                             type="button"
@@ -71,12 +79,28 @@ function Feed() {
                                         >
                                             <i className={`bi ${liked[0] ? "bi-heart-fill" : "bi-heart"}`} />
                                         </button>
-                                        <button type="button" className="btn btn-outline-danger">
+                                        <button type="button" className="btn btn-outline-danger" onClick={handleShow}>
                                             <i className="bi bi-chat-dots" />
                                         </button>
                                         <button type="button" className="btn btn-outline-danger">
                                             <i className="bi bi-send" />
                                         </button>
+                                        { /* Modal para comentarios */}
+                                        {show && (
+                                            <div className="modal-feed" aria-labelledby="staticBackdropLabel" aria-modal="true" role="dialog">
+                                                <div className="modal-dialog modal-content">
+                                                    <div className="modal-header">
+                                                        <h1 className="modal-tittle" id="tituloModal">Comentarios</h1>
+                                                        <button type="button" className="btn-close" onClick={handleClose}></button>
+                                                    </div>
+                                                    <div className="modal-body">
+                                                    </div>
+                                                    <div className="modal-footer">
+                                                        {/* Aquí podrías agregar un formulario para enviar comentarios */}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             </div>
@@ -147,6 +171,3 @@ function Feed() {
 }
 
 export default Feed;
-
-
-
