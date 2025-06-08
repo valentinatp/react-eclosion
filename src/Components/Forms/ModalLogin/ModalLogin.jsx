@@ -6,7 +6,7 @@ const ModalLogin = ({ closeModal }) => {
         <div>
             <div className="modal show d-block" tabIndex="-1" id="loginModal">
                 <div className="modal-dialog modal-dialog-centered">
-                    <div className="modal-content p-4">
+                    <div className="modal-content">
                         <button onClick={closeModal} type="button" className="btn-close ms-auto mb-2" aria-label="Cerrar" data-bs-dismiss="modal"></button>
                         <h1 className="fw-bold mb-2">Inicio de sesión</h1>
                         <p className="mb-4">Inicia sesión con tu cuenta <strong>Eclosión.</strong></p>
@@ -17,7 +17,7 @@ const ModalLogin = ({ closeModal }) => {
                                 <input type="email" className="form-control border border-secondary" id="email" name="email" required autoComplete="username" />
                             </div>
                             {/* Campo de entrada para la contraseña */}
-                            <div className="mb-4">
+                            <div className="mb-3">
                                 <label htmlFor="password" className="fw-bold">Contraseña</label>
                                 <input type="password" className="form-control border border-secondary" id="password" name="password" required autoComplete="current-password" />
                             </div>
