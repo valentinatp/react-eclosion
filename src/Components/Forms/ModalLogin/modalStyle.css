@@ -1,3 +1,9 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+
+}
+
 .modal-content .btn.w-100 {
   color: #F3EDE1; /* Cambia el color a la paleta */
 }
@@ -17,30 +23,40 @@
 
 
 #loginModal .modal-dialog {
+  position: fixed;
+  bottom: 0;
   margin: 0;
-  width: 100vw;
-  min-height: 1000px; /* Cambiado de 100vh a 1000px */
-  max-width: 1000px; /* Cambiado de 100vw a 1000px */
-  display: flex;
+  min-width: 440px;
+  min-height: 612px;
+  width: 100%;
+  display: flex;  
   align-items: stretch;
 }
 
 #loginModal .modal-content {
+  padding: 33px 24.5px 78px 24.5px;
   border-radius: 50px 50px 0px 0px;
-  min-height: 1000px; /* Cambiado de 100vh a 1000px */
-  width: 100vw;
-  max-width: 1000px; /* Cambiado de 100vw a 1000px */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around ; /* para que tenga espacio iguales entre ellos   */
 }
 
-.modal {
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-
+.modal-content h1 {
+  font-size: 32px;
 }
-/* de aqui para abajo agregar las clases  generales, sin pasarse los  */
+.modal-content label{
+  font-size: 18px;
+  
+}
+
+.modal-content .btn-secondary{
+  font-size: 18px;
+  min-height: 62px;
+  min-width: 391px;
+}
+
+ .form-control{
+  min-width: 390px;
+  min-height: 62px;
+ }
 
 
 
@@ -48,25 +64,8 @@
 
 
 
-/* de aqui para abajo solo agregar clases en los @media */
-@media (min-width: 100px) and (max-width: 767.99px) {  
-      #loginModal .modal-dialog {
-    margin: 0;
-    width: 100vw;
-    min-height: 1000px; /* Cambiado de 100vh a 1000px */
-    max-width: 1000px; /* Cambiado de 10000vw a 1000px */
-    display: flex;
-    align-items: stretch;
-  }
-  #loginModal .modal-content {
-    border-radius: 50px 50px 0px 0px;
-    min-height: 1000px; /* Cambiado de 100vh a 1000px */
-    width: 100vw;
-    max-width: 1000px; /* Cambiado de 100vw a 1000px */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+@media (min-width: 576px) {    
+
 }
 
 
@@ -81,7 +80,7 @@
 
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 992.99px) {
+@media (min-width: 768px){
   #loginModal .modal-dialog {
     margin: 0;
     width: 1000px; /* Cambiado de 100vh a 1000px */
@@ -111,7 +110,7 @@
 
 
 /* Desde 993px en adelante: vuelve al centrado y tamaño normal */
-@media (min-width: 993px) {
+@media (min-width: 992px) {
 
   .modal-content .register-link a:hover, .modal-content a.fw-bold:hover {text-decoration: underline;}
   #loginModal .modal-dialog {
