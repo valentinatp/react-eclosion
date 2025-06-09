@@ -25,7 +25,7 @@ const ModalLogin = ({ closeModal }) => {
                                 <input type="password" className="form-control border border-secondary" id="password" name="password" required autoComplete="current-password" />
                             </div>
                             {/* Botones para cancelar o iniciar sesión */}
-                            <div className="d-flex gap-2">
+                            <div className="d-flex gap-5">
                                 <button type="button" className="btn btn-success fw-bold btn-extra" onClick={closeModal}>Cancelar</button>
                                 <button type="submit" className="btn btn-secondary fw-bold">Iniciar sesión</button>
                             </div>
