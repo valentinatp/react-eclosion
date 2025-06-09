@@ -1,13 +1,16 @@
 import React from 'react';
+import { BsXLg } from "react-icons/bs";
+
+
 import { Link } from 'react-router-dom';
 
 const ModalLogin = ({ closeModal }) => {
     return (
-        <div>
+        <>
             <div className="modal show d-block" tabIndex="-1" id="loginModal">
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
-                        <button onClick={closeModal} type="button" className="btn-close ms-auto mb-2" aria-label="Cerrar" data-bs-dismiss="modal"></button>
+                        <button onClick={closeModal} type="button" className="btn-close-v2 ms-auto "><BsXLg /></button>
                         <h1 className="fw-bold mb-2">Inicio de sesión</h1>
                         <p className="mb-4">Inicia sesión con tu cuenta <strong>Eclosión.</strong></p>
                         <form>
@@ -24,14 +27,14 @@ const ModalLogin = ({ closeModal }) => {
                             {/* Botones para cancelar o iniciar sesión */}
                             <div className="d-flex gap-2">
                                 <button type="button" className="btn btn-success fw-bold btn-extra" onClick={closeModal}>Cancelar</button>
-                                <button type="submit" className="btn btn-secondary w-100 fw-bold">Iniciar sesión</button>
+                                <button type="submit" className="btn btn-secondary fw-bold">Iniciar sesión</button>
                             </div>
                             <p className="mt-4 text-center register-link">¿No tienes una cuenta? <Link to="/register">Registrate.</Link></p>
                         </form>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
